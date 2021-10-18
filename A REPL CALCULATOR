@@ -1,0 +1,25 @@
+#A REPL CALCULATOR
+#this calculator evaluates simple arithmetic questions
+
+puts "A SIMPLE CALCULATOR!"
+loop do
+p "how can i help? >"
+input = gets.chomp.strip.split(' ')
+command = input[1]
+arg1 = input [0].to_f
+arg2 = input [2].to_f
+if 
+  arg1 == "stop"
+  break puts "goodbye"
+elsif command=="+"
+  puts arg1 + arg2
+elsif command== "-"
+  puts arg1 - arg2
+elsif command== "*"
+  puts arg1*arg2
+elsif command== "/"
+  puts arg1/arg2
+else puts "i cannot handle complex questions or try spacing the entries"
+end
+
+end
